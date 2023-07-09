@@ -1,4 +1,4 @@
-# FUNDAMENTALS PHYTON <img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="100px"/>
+# FUNDAMENTALS PHYTON <img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="85px"/>
 
 Bienvenidos a la guía para principiantes de Python realizada por Ramón Peinado Ruiz.
 
