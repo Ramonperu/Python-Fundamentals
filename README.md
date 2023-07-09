@@ -5,8 +5,8 @@ Bienvenidos a la guía para principiantes de Python realizada por Ramón Peinado
 ## CONCEPTOS BASICOS
 
  Python es un lenguaje de programación que se utiliza ampliamente en diferentes áreas, como desarrollo web, análisis de datos, inteligencia artificial, automatización de tareas y mucho más.
-
-<img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="300px" align="center"/>
+  <div align="center">
+<img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="300px"/>
 
 Características sobre Python:
 
