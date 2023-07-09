@@ -1,4 +1,4 @@
-# FUNDAMENTALS PHYTON
+# FUNDAMENTALS PHYTON <img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="100px"/>
 
 Bienvenidos a la guía para principiantes de Python realizada por Ramón Peinado Ruiz.
 
@@ -26,7 +26,7 @@ Antes de poder programar en Python hemos de preparar nuestro entorno, estos son 
 - **Instala Python**: Primero, necesitarás instalar Python en tu sistema. Puedes descargar la última versión estable de Python desde el sitio web oficial ([https://www.python.org](https://www.python.org/)). Asegúrate de seleccionar la versión adecuada para tu sistema operativo.
 - **Elige un entorno de desarrollo**: Puedes utilizar el intérprete interactivo de Python en la línea de comandos para escribir y ejecutar código de Python de forma interactiva, para iniciarlo hemos de escribir Python en la linea de comandos una vez instalado. Sin embargo, también puedes considerar instalar un entorno de desarrollo integrado (IDE) que ofrezca características adicionales como **resaltado de sintaxis, depuración y sugerencias de código**. Algunos IDE populares para Python son PyCharm, Visual Studio Code, Atom y IDLE.
 
-- **Instalación de Jupyter Notebook**: Project Jupyter es una organización sin fines de lucro que fabrica herramientas Python para programación y ciencia de datos, y una de sus herramientas más conocidas es Jupyter Notebook, una aplicación web que le permite escribir y ejecutar programas Python en su navegador en lugar de en la línea de comandos. Cuando ejecuta Jupyter Notebook desde la línea de comandos, lo que realmente está haciendo es iniciar un servidor de aplicaciones web que se ejecuta en su pc. Para instalarlo escribiremos en nuestra terminal `pip install notebook` para entrar ejecutaremos un `jupyter notebook` y veremos algo como esto:
+- **Instalación de Jupyter Notebook**: Jupyter Notebook es una aplicación web que le permite escribir y ejecutar programas Python en su navegador en lugar de en la línea de comandos. Para instalarlo escribiremos en nuestra terminal `pip install notebook` para entrar ejecutaremos un `jupyter notebook` y veremos algo como esto:
 
   <img src="/img/4ºimagenn.PNG"  />
 
@@ -54,11 +54,11 @@ Jupyter Notebooks es una herramienta creada por la organización sin fines de lu
 
 Al ejecutar Jupyter Notebooks desde la línea de comandos, se inicia un servidor de aplicación web en el equipo, que se abre automáticamente en el navegador. Los archivos con extensión ".ipynb" son archivos de cuaderno de IPython, que son los que Jupyter Notebook ayuda a crear y editar.
 
-Cada cuaderno consiste en una serie de celdas. Para crear nuevas celdas, se puede presionar Shift + Enter. Para eliminar celdas, se puede hacer clic fuera de la celda y luego escribir "dd".
+Cada cuaderno consiste en una serie de celdas. Para **crear nuevas celdas**, se puede presionar **Shift + Enter**. Para **eliminar celdas**, se puede hacer clic fuera de la celda y luego **escribir "dd"**.
 
 <img src="/img/5ºimagenn.PNG"  />
 
-Las celdas pueden estar en dos modos: el modo de comando y el modo de edición. En el modo de edición, se puede ingresar código de Python y ejecutarlo presionando Shift + Enter. En el modo de comando, se pueden realizar acciones como crear nuevas celdas, cambiar el tipo de celda a Mark Down y utilizar atajos de teclado.
+Las celdas pueden estar en dos modos: el **modo de comando y el modo de edición**. En el modo de edición, se puede ingresar código de Python y ejecutarlo presionando Shift + Enter. En el modo de comando, se pueden realizar acciones como crear nuevas celdas, cambiar el tipo de celda a Mark Down y utilizar atajos de teclado.
 
 
 
