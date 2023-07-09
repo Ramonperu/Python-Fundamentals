@@ -99,9 +99,7 @@ Tipos de variables mas comunes:
 
 Esta guía básica no podía haber sido realizada sin la ayuda de estos dos cursos:
 
-Aprende a usar la línea de comandos de Linux			Esther Yébenes 		Linkedin Learning.
+Python Essential Training													Ryan Mitchell 		Linkedin Learning.
 
-Operating Systems Basics 																					Cisco Networking Academy.
-
-Mencionar también la gran ayuda recibida por parte de toda la comunidad de Linux y sus foros .
+Mencionar también la gran ayuda recibida por parte de toda la comunidad de Python y sus foros.
 
