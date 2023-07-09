@@ -7,7 +7,7 @@ Bienvenidos a la guía para principiantes de Python realizada por Ramón Peinado
  Python es un lenguaje de programación que se utiliza ampliamente en diferentes áreas, como desarrollo web, análisis de datos, inteligencia artificial, automatización de tareas y mucho más.
   <div align="center">
 <img src="https://media.giphy.com/media/coxQHKASG60HrHtvkt/giphy.gif" width="300px"/>
-
+</div>
 Características sobre Python:
 
 - **Sintaxis sencilla**: Python se destaca por su sintaxis fácil de leer y comprender. Utiliza una indentación consistente en lugar de llaves o palabras clave para delimitar bloques de código, lo que mejora la legibilidad.
