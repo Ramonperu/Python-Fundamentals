@@ -89,11 +89,31 @@ Tipos de variables mas comunes:
 
 ## ESTRUCTURA DE DATOS
 
-- **Listas**: Es una **estructura de datos que te permite almacenar una colección ordenada de elementos**. Puedes pensar en una lista como una secuencia de elementos separados por comas y encerrados entre corchetes.
+- **Listas`[]`**: Es una estructura de datos que te p**ermite almacenar una colección ordenada** **(Son sensibles al orden)** **de elementos**. Puedes pensar en una lista como una secuencia de elementos separados por comas y encerrados entre corchetes.
 
-  Las listas son muy versátiles y **pueden contener elementos de diferentes tipos, como números, cadenas, booleanos e incluso otras listas**. Las listas son mutables, lo que significa que puedes modificar, agregar y eliminar elementos de ellas después de que se hayan creado. Es posible obtener el valor de la longitud de nuestra lista con la función `len(lista)`
+  Características: Las listas son muy versátiles y **pueden contener elementos de diferentes tipos, como números, cadenas, booleanos e incluso otras listas**. Las listas son mutables, lo que significa que puedes modificar, agregar y eliminar elementos de ellas después de que se hayan creado. Es posible obtener el **valor de la longitud** de nuestra lista con la **función** `len(lista)`.
 
+  Ejemplo:
+  
   <img src="/img/8ºimagenn.PNG"  />
+  
+  
+  
+- **Sets o conjuntos` {}`: **Es una estructura de datos que representa una colección desordenada de elementos únicos. 
+
+  Características: **Elementos únicos**, **no hay orden definido ni es sensible a este**, **mutabilidad** (Puedes agregar, eliminar y modificar elementos en un conjunto después de que se haya creado), **operaciones de conjuntos** (Estas operaciones te permiten combinar, comparar y manipular conjuntos de manera eficiente.)
+
+  Ejemplo:
+
+  <img src="/img/9ºimagenn.PNG"  />
+
+- **Tuples`()`**: Es una estructura de datos similar a una lista. Se utilizan para almacenar una colección ordenada de elementos, al igual que las listas, pero con la característica adicional de inmutabilidad. 
+
+  Características: **Elementos ordenados**, **inmutabilidad** (no se pueden modificar después de su creación. No puedes agregar, eliminar o modificar elementos individuales en una tupla como con las listas, vease el ejemplo. Sin embargo, puedes crear nuevas tuplas mediante la concatenación o el desempaquetado), **utilidad y ventajas** (son útiles cuando necesitas almacenar una colección de elementos que no cambiarán a lo largo del programa. También son más eficientes en términos de uso de memoria en comparación con las listas)
+
+  Ejemplo:
+
+  <img src="/img/10ºimagenn.PNG"  />
 
 ## BIBLIOGRAFIA y AGRADECIMIENTOS
 
