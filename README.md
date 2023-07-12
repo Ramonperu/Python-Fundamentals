@@ -99,7 +99,7 @@ Tipos de variables mas comunes:
   
   
   
-- **Sets o conjuntos` {}`: **Es una estructura de datos que representa una colección desordenada de elementos únicos. 
+- **Sets o conjuntos` {}`**: Es una estructura de datos que representa una colección desordenada de elementos únicos. 
 
   Características: **Elementos únicos**, **no hay orden definido ni es sensible a este**, **mutabilidad** (Puedes agregar, eliminar y modificar elementos en un conjunto después de que se haya creado), **operaciones de conjuntos** (Estas operaciones te permiten combinar, comparar y manipular conjuntos de manera eficiente.)
 
