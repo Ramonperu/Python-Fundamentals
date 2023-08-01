@@ -62,7 +62,7 @@ Las celdas pueden estar en dos modos: el **modo de comando y el modo de edición
 
 
 
-## VARIABLES COMUNES+ Y TIPOS
+## VARIABLES COMUNES Y TIPOS
 
 Una **variable es una unidad fundamental en un programa** a la cual se le asigna un valor. Se puede crear la variable "x" y asignarle el valor 5 utilizando el signo igual (**=** conocido como **operador de asignación**, no confundir con **== el operador de declaración**). 
 
@@ -99,7 +99,7 @@ Tipos de variables mas comunes:
   
   
   
-- **Sets o conjuntos` {}`**: Es una estructura de datos que representa una colección desordenada de elementos únicos. 
+- **Sets o conjuntos`{}`**: Es una estructura de datos que representa una colección desordenada de elementos únicos. 
 
   Características: **Elementos únicos**, **no hay orden definido ni es sensible a este**, **mutabilidad** (Puedes agregar, eliminar y modificar elementos en un conjunto después de que se haya creado), **operaciones de conjuntos** (Estas operaciones te permiten combinar, comparar y manipular conjuntos de manera eficiente.)
 
@@ -113,7 +113,113 @@ Tipos de variables mas comunes:
 
   Ejemplo:
 
+  
+  
   <img src="/img/10ºimagenn.PNG"  />
+
+- **Diccionarios`{}`**: Es una estructura de datos que permite almacenar pares de clave-valor.
+
+  Características: **Pares clave-valor**(Los pares clave-valor se separan con dos puntos `:` y cada par se separa por comas. Por ejemplo: `{clave1: valor1, clave2: valor2}`.La clave puede ser cualquier tipo de dato inmutable, como una cadena, un número o una tupla, mientras que el valor puede ser cualquier tipo de dato válido en Python), **acceso a los valores mediante claves**, **mutabilidad**(se puede agregar modificar o eliminar), **operaciones de diccionario** (Los diccionarios en Python proporcionan una variedad de operaciones útiles).
+
+  <img src="/img/11ºimagenn.PNG"  />
+
+## OPERADORES
+
+Los operadores son las instrucciones que nos dicen que hacer con los datos, hay varios tipos:
+
+- **Operadores aritméticos**:  Realizan operaciones matemáticas en números. Los operadores aritméticos incluyen:
+  - Suma: `+` (por ejemplo, `1 + 1 = 2`).
+  - Multiplicación: `*` (por ejemplo, `2 * 3 = 6`).
+  - Exponente: `**` (por ejemplo, `5 ** 2 = 25`).
+  - División: `/` (por ejemplo, `20 / 5 = 4.0`). Siempre devuelve un valor decimal (float).
+  - Módulo: `%` (por ejemplo, `20 % 6 = 2`). Devuelve el resto de una división.
+- **Operadores de concatenación de cadenas**: Operan en cadenas y se utilizan para unir o repetir cadenas.
+  - Concatenación: `+` (por ejemplo, `"Hola " + "mundo" = "Hola mundo"`).
+  - Repetición: `*` (por ejemplo, `"Hola " * 4 = "Hola Hola Hola Hola "`).
+- **Comparacion**: Comparan dos valores y devuelven un valor booleano 
+  - Igualdad: `==` (por ejemplo, `4 == 4` es verdadero).
+  - Menor que: `<` (por ejemplo, `4 < 5` es verdadero).
+  - Menor o igual que: `<=` (por ejemplo, `5 <= 5` es verdadero).
+  - Mayor que: `>` (por ejemplo, `5 > 2` es verdadero).
+  - Mayor o igual que: `>=` (por ejemplo, `5 >= 2` es verdadero).
+  - Diferente: `!=` (por ejemplo, `4 != 5` es verdadero).
+- **Operadores lógicos**: Operan en valores booleanos y combinan o niegan condiciones.
+  - Y lógico: `and` (por ejemplo, `True and False` es falso).
+  - O lógico: `or` (por ejemplo, `True or False` es verdadero).
+  - No lógico: `not` (por ejemplo, `not True` es falso).
+- **Operadores de membresía**: Verifican si un valor está presente en una secuencia.
+  - Pertenece a: `in` (por ejemplo, `1 in [1, 2, 3, 4, 5]` es verdadero).
+  - No pertenece a: `not in` (por ejemplo, `10 not in [1, 2, 3, 4, 5]` es verdadero).
+
+
+
+## Flujo de control
+
+- **if**: Usado para **ejecutar una decisión en base a una condición**. Si en este ejemplo cambiáramos el valor a `False` no se imprimiría nada en pantalla.
+
+  <img src="/img/12ºimagenn.PNG"  />
+
+  Después de los dos puntos del condicional `if ramonestaprogramando:` se aplica una sangria, esto quiere decir que todo lo que hay tras los dos puntos se ejecutará SOLO si se cumple que `ramonestaprogramando = True`.
+
+  - **if - else**:  nos dará la posibilidad de **ejecutar otra cosa si la condición del if no se cumple**:
+
+  <img src="/img/13ºimagenn.PNG"  />
+
+  Podemos introducir condiciones dentro de otras condiciones:
+
+  <img src="/img/14ºimagenn.PNG"  />
+
+  Si cambiamos la variable de julio a `False` no llegariamos al 'Todos estan programando'.
+
+- **for**: El bucle "for" te **permite recorrer cada elemento de una lista** (u otro tipo de secuencia) **y realizar una acción con cada uno** de ellos.
+
+  <img src="/img/15ºimagenn.PNG"  />
+
+  
+
+  Destacar que el "fruta" dentro de nuestro bucle es una variable la cual nosotros declaramos en la linea del for y podemos nombrarla a nuestro gusto. En este ejemplo podríamos haberlo llamado "numero" para facilitar el entendimiento.
+
+  <img src="/img/16ºimagenn.PNG"  />
+
+- **while**: Se utiliza **cuando deseas repetir un bloque de código mientras se cumple una condición específica**. Esto significa que el bloque de código se ejecutará una y otra vez hasta que la condición sea falsa.
+
+  <img src="/img/17ºimagenn.PNG"  />
+
+  Normalmente se usa el bucle while cuando las condiciones están cambiando o se ven directamente impactadas por el bloque debajo del bucle while, si no este bucle puede quedar ejecutándose de manera infinita.
+
+## Funciones
+
+Las funciones en Python son mini-programas, son bloques de código que se pueden llamar y reutilizar fácilmente para realizar una tarea específica. Las funciones se definen utilizando la palabra clave "def", seguida del nombre de la función y paréntesis. 
+
+Creemos por ejemplo una función que multiplique una variable por 10:
+
+<img src="/img/18ºimagenn.PNG"  />
+
+Para usarla simplemente hemos de ejecutar la función con un valor en su interior:
+
+<img src="/img/19ºimagenn.PNG"  />
+
+Las funciones no han de devolver siempre algo, simplemente pueden mutar o cambiar una variable:
+
+<img src="/img/20ºimagenn.PNG"  />
+
+Si usas una función que no devuelve nada, asegúrate de no operar con el valor devuelto como si fuera otro tipo de dato, esto puede causar problemas.
+
+
+
+## Clases y objetos
+
+Las clases **son como plantillas o moldes para crear objetos**. Cada clase define cómo se verá y qué podrá hacer un objeto. Las clases generalmente **comienzan con letras mayúsculas** y es lo que las diferencia de los nombres de variables y funciones
+
+La manera mas simple de entender las clases es con el ejemplo del perro:
+
+Todos los perros tienen características similares, como color de pelo, tamaño, ladrido, y pueden hacer cosas como caminar, ladrar y comer.
+
+En Python, creamos una clase para definir cómo se comportará un perro. Para hacerlo, utilizamos la palabra clave "class" seguida del nombre de la clase y dos puntos. Dentro de la clase, definimos las características y acciones del perro usando funciones especiales llamadas "métodos".
+
+Al definir la clase hemos de definir la primera función, la función `init`, init significa inicialización y esta función se llama cada vez que se cree una instancia de la clase que estemos creando.
+
+<img src="/img/21ºimagenn.PNG"  />
 
 ## BIBLIOGRAFIA y AGRADECIMIENTOS
 
