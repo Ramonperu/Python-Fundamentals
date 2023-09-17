@@ -30,7 +30,7 @@ Antes de poder programar en Python hemos de preparar nuestro entorno, estos son 
 
   <img src="/img/4ºimagenn.PNG"  />
 
-## PRIMER PROGRAMA
+## Primer Programa
 
 Hemos escogido Visual Studio como entorno de desarrollo, vamos a realizar nuestro primer programa.
 
@@ -46,7 +46,7 @@ Accederemos a la ubicación del archivo y una vez dentro ejecutaremos un `python
 
 <img src="/img/3ºimagenn.PNG"  />
 
-## ENTORNO DE JUPYTER NOTEBOOK
+## Entorno de Jupyter Notebook
 
 Hemos comentado anteriormente que tenemos que instalar Jupyter notebook, vamos a justificar el uso de esta herramienta y mostrar como se usa:
 
@@ -60,172 +60,161 @@ Cada cuaderno consiste en una serie de celdas. Para **crear nuevas celdas**, se 
 
 Las celdas pueden estar en dos modos: el **modo de comando y el modo de edición**. En el modo de edición, se puede ingresar código de Python y ejecutarlo presionando Shift + Enter. En el modo de comando, se pueden realizar acciones como crear nuevas celdas, cambiar el tipo de celda a Mark Down y utilizar atajos de teclado.
 
+## Operadores
 
-
-## VARIABLES COMUNES Y TIPOS
-
-Una **variable es una unidad fundamental en un programa** a la cual se le asigna un valor. Se puede crear la variable "x" y asignarle el valor 5 utilizando el signo igual (**=** conocido como **operador de asignación**, no confundir con **== el operador de declaración**). 
-
-Existen reglas para los nombres de las variables. No pueden comenzar con números y no pueden contener caracteres especiales, excepto el guion bajo (_). Además, **es común que los nombres de las variables en Python comiencen con letras minúsculas**, las mayusculas se usan para las clases.
+Estos son los operadores:
 
 <img src="/img/6ºimagenn.PNG"  />
 
-Se pueden asignar valores de texto a las variables. Estos **valores de texto se llaman cadenas o strings** en programación.
-
-Para determinar el tipo de variable, se puede utilizar la función "type", si en algún momento olvidamos el tipo de variable podemos obtenerlo fácilmente con esta funcion.
+Ejemplos de su uso:
 
 <img src="/img/7ºimagenn.PNG"  />
 
-Tipos de variables mas comunes:
+## Tipos de datos de objeto, prioridades de operador y conversión de tipos de datos
 
-- **Números enteros (int)**: Representan números enteros sin decimales. Por ejemplo: `1`, `10`, `-5`. Los números enteros en Python no tienen un límite de tamaño.
-- **Números de punto flotante (float)**: Representan números con decimales. Por ejemplo: `3.14`, `2.71828`, `-0.5`. 
-- **Cadenas de texto (str)**: Representan secuencias de caracteres entre comillas simples o dobles. Por ejemplo: `'Hola'`, `"Mundo"`, `'42'`. Puedes realizar diversas operaciones en cadenas, como concatenarlas (sumarlas como cadenas de texto), extraer subcadenas y formatearlas.
-- **Booleanos (bool)**: Representan valores de verdad, es decir, verdadero (`True`) o falso (`False`)(Destacar que es sensitivo a minúsculas y si se pone `true` nos dará un error buscando una variable). Estos valores se utilizan principalmente en expresiones condicionales y bucles para tomar decisiones basadas en condiciones.
+### Estos son los tipos de datos básicos y ejemplos:
 
+<img src="/img/8ºimagenn.PNG"  />
 
+<img src="/img/9ºimagenn.PNG"  />
 
+Podemos detectar el tipo de dato con la función `type(datodelquequeremoseltipo)`
 
-
-## ESTRUCTURA DE DATOS
-
-- **Listas`[]`**: Es una estructura de datos que te p**ermite almacenar una colección ordenada** **(Son sensibles al orden)** **de elementos**. Puedes pensar en una lista como una secuencia de elementos separados por comas y encerrados entre corchetes.
-
-  Características: Las listas son muy versátiles y **pueden contener elementos de diferentes tipos, como números, cadenas, booleanos e incluso otras listas**. Las listas son mutables, lo que significa que puedes modificar, agregar y eliminar elementos de ellas después de que se hayan creado. Es posible obtener el **valor de la longitud** de nuestra lista con la **función** `len(lista)`.
-
-  Ejemplo:
-  
-  <img src="/img/8ºimagenn.PNG"  />
-  
-  
-  
-- **Sets o conjuntos`{}`**: Es una estructura de datos que representa una colección desordenada de elementos únicos. 
-
-  Características: **Elementos únicos**, **no hay orden definido ni es sensible a este**, **mutabilidad** (Puedes agregar, eliminar y modificar elementos en un conjunto después de que se haya creado), **operaciones de conjuntos** (Estas operaciones te permiten combinar, comparar y manipular conjuntos de manera eficiente.)
-
-  Ejemplo:
-
-  <img src="/img/9ºimagenn.PNG"  />
-
-- **Tuples`()`**: Es una estructura de datos similar a una lista. Se utilizan para almacenar una colección ordenada de elementos, al igual que las listas, pero con la característica adicional de inmutabilidad. 
-
-  Características: **Elementos ordenados**, **inmutabilidad** (no se pueden modificar después de su creación. No puedes agregar, eliminar o modificar elementos individuales en una tupla como con las listas, vease el ejemplo. Sin embargo, puedes crear nuevas tuplas mediante la concatenación o el desempaquetado), **utilidad y ventajas** (son útiles cuando necesitas almacenar una colección de elementos que no cambiarán a lo largo del programa. También son más eficientes en términos de uso de memoria en comparación con las listas)
-
-  Ejemplo:
-
-  
-  
-  <img src="/img/10ºimagenn.PNG"  />
-
-- **Diccionarios`{}`**: Es una estructura de datos que permite almacenar pares de clave-valor.
-
-  Características: **Pares clave-valor**(Los pares clave-valor se separan con dos puntos `:` y cada par se separa por comas. Por ejemplo: `{clave1: valor1, clave2: valor2}`.La clave puede ser cualquier tipo de dato inmutable, como una cadena, un número o una tupla, mientras que el valor puede ser cualquier tipo de dato válido en Python), **acceso a los valores mediante claves**, **mutabilidad**(se puede agregar modificar o eliminar), **operaciones de diccionario** (Los diccionarios en Python proporcionan una variedad de operaciones útiles).
-
-  <img src="/img/11ºimagenn.PNG"  />
-
-## OPERADORES
-
-Los operadores son las instrucciones que nos dicen que hacer con los datos, hay varios tipos:
-
-- **Operadores aritméticos**:  Realizan operaciones matemáticas en números. Los operadores aritméticos incluyen:
-  - Suma: `+` (por ejemplo, `1 + 1 = 2`).
-  - Multiplicación: `*` (por ejemplo, `2 * 3 = 6`).
-  - Exponente: `**` (por ejemplo, `5 ** 2 = 25`).
-  - División: `/` (por ejemplo, `20 / 5 = 4.0`). Siempre devuelve un valor decimal (float).
-  - Módulo: `%` (por ejemplo, `20 % 6 = 2`). Devuelve el resto de una división.
-- **Operadores de concatenación de cadenas**: Operan en cadenas y se utilizan para unir o repetir cadenas.
-  - Concatenación: `+` (por ejemplo, `"Hola " + "mundo" = "Hola mundo"`).
-  - Repetición: `*` (por ejemplo, `"Hola " * 4 = "Hola Hola Hola Hola "`).
-- **Comparacion**: Comparan dos valores y devuelven un valor booleano 
-  - Igualdad: `==` (por ejemplo, `4 == 4` es verdadero).
-  - Menor que: `<` (por ejemplo, `4 < 5` es verdadero).
-  - Menor o igual que: `<=` (por ejemplo, `5 <= 5` es verdadero).
-  - Mayor que: `>` (por ejemplo, `5 > 2` es verdadero).
-  - Mayor o igual que: `>=` (por ejemplo, `5 >= 2` es verdadero).
-  - Diferente: `!=` (por ejemplo, `4 != 5` es verdadero).
-- **Operadores lógicos**: Operan en valores booleanos y combinan o niegan condiciones.
-  - Y lógico: `and` (por ejemplo, `True and False` es falso).
-  - O lógico: `or` (por ejemplo, `True or False` es verdadero).
-  - No lógico: `not` (por ejemplo, `not True` es falso).
-- **Operadores de membresía**: Verifican si un valor está presente en una secuencia.
-  - Pertenece a: `in` (por ejemplo, `1 in [1, 2, 3, 4, 5]` es verdadero).
-  - No pertenece a: `not in` (por ejemplo, `10 not in [1, 2, 3, 4, 5]` es verdadero).
+<img src="/img/10ºimagenn.PNG"  />
 
 
 
-## Flujo de control
+### Prioridad de los operadores:
 
-- **if**: Usado para **ejecutar una decisión en base a una condición**. Si en este ejemplo cambiáramos el valor a `False` no se imprimiría nada en pantalla.
+Cuanto mas alto en la tabla mas alta la prioridad, el calculo se realiza antes:
 
-  <img src="/img/12ºimagenn.PNG"  />
+<img src="/img/11ºimagenn.PNG"  />
 
-  Después de los dos puntos del condicional `if ramonestaprogramando:` se aplica una sangria, esto quiere decir que todo lo que hay tras los dos puntos se ejecutará SOLO si se cumple que `ramonestaprogramando = True`.
+Hemos de tener cuidado cuando hacemos ciertas ecuaciones, algunas dan errores como por ejemplo la division entre 0...
 
-  - **if - else**:  nos dará la posibilidad de **ejecutar otra cosa si la condición del if no se cumple**:
+### Conversión de datos:
 
-  <img src="/img/13ºimagenn.PNG"  />
+Podemos convertir el tipo de dato de manera simple:
 
-  Podemos introducir condiciones dentro de otras condiciones:
+<img src="/img/12ºimagenn.PNG"  />
 
-  <img src="/img/14ºimagenn.PNG"  />
+Como vemos hay otro tipo de dato llamado None, este tipo de dato indica que la variable no tiene valor.
 
-  Si cambiamos la variable de julio a `False` no llegariamos al 'Todos estan programando'.
+### Cadenas o Strings y sus aplicaciones:
 
-- **for**: El bucle "for" te **permite recorrer cada elemento de una lista** (u otro tipo de secuencia) **y realizar una acción con cada uno** de ellos.
+La string ha de operarse con un entero en la multiplicación si no obtendremos un error
 
-  <img src="/img/15ºimagenn.PNG"  />
+<img src="/img/13ºimagenn.PNG"  />
 
-  
+Si concatenamos una str y un numero entero obtendremos un error, tendríamos que modificar el tipo
 
-  Destacar que el "fruta" dentro de nuestro bucle es una variable la cual nosotros declaramos en la linea del for y podemos nombrarla a nuestro gusto. En este ejemplo podríamos haberlo llamado "numero" para facilitar el entendimiento.
+<img src="/img/14ºimagenn.PNG"  />
 
-  <img src="/img/16ºimagenn.PNG"  />
+Uso de la coma:
 
-- **while**: Se utiliza **cuando deseas repetir un bloque de código mientras se cumple una condición específica**. Esto significa que el bloque de código se ejecutará una y otra vez hasta que la condición sea falsa.
+<img src="/img/15ºimagenn.PNG"  />
 
-  <img src="/img/17ºimagenn.PNG"  />
+Si queremos citar dentro de las cadenas con " " o con '' :
 
-  Normalmente se usa el bucle while cuando las condiciones están cambiando o se ven directamente impactadas por el bloque debajo del bucle while, si no este bucle puede quedar ejecutándose de manera infinita.
+<img src="/img/16ºimagenn.PNG"  />
 
-## Funciones
+Si queremos cambiar de linea usamos:
 
-Las funciones en Python son mini-programas, son bloques de código que se pueden llamar y reutilizar fácilmente para realizar una tarea específica. Las funciones se definen utilizando la palabra clave "def", seguida del nombre de la función y paréntesis. 
+<img src="/img/17ºimagenn.PNG"  />
 
-Creemos por ejemplo una función que multiplique una variable por 10:
+Si queremos insertar una tabulación en una cadena: 
 
 <img src="/img/18ºimagenn.PNG"  />
 
-Para usarla simplemente hemos de ejecutar la función con un valor en su interior:
+Indexar las cadenas o como obtener un cierto caracter:
 
 <img src="/img/19ºimagenn.PNG"  />
 
-Las funciones no han de devolver siempre algo, simplemente pueden mutar o cambiar una variable:
+Si introducimos un valor negativo querra decir que empezamos por el ultimo carácter de nuestra cadena:
 
 <img src="/img/20ºimagenn.PNG"  />
 
-Si usas una función que no devuelve nada, asegúrate de no operar con el valor devuelto como si fuera otro tipo de dato, esto puede causar problemas.
+## Variables
+
+Las variables se utilizan para almacenar valores de numeros reales, enteros, cadenas... existe una gramática especifica para la declaración de estas. Las variables se declaran con identificadores para poder diferenciarlas, estos identificadores deben de seguir estas reglas:
+
+1. Los nombres de las variables pueden contener letras, números o barras bajas (`_`) pero no pueden contener espacios en blanco, letras con tilde o eñes. 
+
+2. Tampoco pueden comenzar con números.
+
+3. No pueden contener espacios o tabulaciones
+
+4. Python distingue entre mayusculas y minusculas INDEX y index son variables diferentes
+
+5. No se pueden usar las Keywords o las palabras reservadas para Python
+
+   <img src="/img/21ºimagenn.PNG"  />
+
+   
+
+   No es necesario memorizarlas todas, se pueden obtener por pantalla de la siguiente manera
+
+   <img src="/img/22ºimagenn.PNG"  />
+
+   
+
+Al identificar variables lo esencial es que se identifiquen de manera logica, es decir si vamos a introducir una variable la cual sea un peso, es logico que esta se llame peso.
+
+Podemos identificara el tipo de dato de una variable de la misma manera que lo haciamos con los datos normales, `type(variable)`
+
+<img src="/img/23ºimagenn.PNG"  />
+
+Podemos asignar el valor de una operacion a una variable 
+
+<img src="/img/24ºimagenn.PNG"  />
+
+Tambien podemos asignar varios valores a varias variables de manera simultanea
+
+<img src="/img/25ºimagenn.PNG"  />
+
+O 1 valor a varias variables simultáneamente
+
+<img src="/img/26ºimagenn.PNG"  />
+
+## Operadores de asignación compuesta
+
+Estos son los operadores de asignacion compuesta, facilitan las operaciones.<img src="/img/27ºimagenn.PNG"  />Ejemplos:
+
+<img src="/img/28ºimagenn.PNG"  />
+
+## Función de entrada
+
+Podemos pedirle valores al usuario que use nuestro código esto se realiza mediante la función `input()`
+
+Por ejemplo vamos a pedirle el peso y altura al usuario para calcular su índice de masa corporal
+
+- Indicamos el tipo de dato antes de pedírselo, para evitarnos errores si introducen valores con decimales o centesimas indicamos que este es float
+
+<img src="/img/29ºimagenn.PNG"  />
 
 
 
-## Clases y objetos
+De la misma manera que pedimos datos numericos podemos pedir cadenas de caracteres o strings
 
-Las clases **son como plantillas o moldes para crear objetos**. Cada clase define cómo se verá y qué podrá hacer un objeto. Las clases generalmente **comienzan con letras mayúsculas** y es lo que las diferencia de los nombres de variables y funciones
 
-La manera mas simple de entender las clases es con el ejemplo del perro:
 
-Todos los perros tienen características similares, como color de pelo, tamaño, ladrido, y pueden hacer cosas como caminar, ladrar y comer.
+<img src="/img/30ºimagenn.PNG"  />
 
-En Python, creamos una clase para definir cómo se comportará un perro. Para hacerlo, utilizamos la palabra clave "class" seguida del nombre de la clase y dos puntos. Dentro de la clase, definimos las características y acciones del perro usando funciones especiales llamadas "métodos".
+Si le definimos el tipo de dato el cual vamos a introducir, Python solo aceptara ese tipo de dato y obtendremos un error si introducimos otro tipo de dato.
 
-Al definir la clase hemos de definir la primera función, la función `init`, init significa inicialización y esta función se llama cada vez que se cree una instancia de la clase que estemos creando.
 
-<img src="/img/21ºimagenn.PNG"  />
+
+Ejercicios básicos numéricos:
+
+<img src="/img/31ºimagenn.PNG"  />
+
+
 
 ## BIBLIOGRAFIA y AGRADECIMIENTOS
 
-Esta guía básica no podía haber sido realizada sin la ayuda de estos dos cursos:
+Esta guía básica no podía haber sido realizada sin la ayuda de este curso:
 
-Python Essential Training													Ryan Mitchell 		Linkedin Learning.
+Curso de Iniciación a la programación con Inteligencia artificial y prompts de ChatGPT				EOI
 
 Mencionar también la gran ayuda recibida por parte de toda la comunidad de Python y sus foros.
 
